@@ -1,0 +1,140 @@
+/* --- Royal Eid "Sultan Edition": Emerald & Champagne Gold --- */
+
+:root { 
+    /* The Palette of Royalty */
+    --emerald-deep: #022c22;        /* Darker, more expensive Forest/Onyx Green */
+    --emerald-main: #064e3b;        /* Rich Malachite Green */
+    --gold-leaf: #d4af37;           /* True Metallic Gold */
+    --gold-silk: #f3e5ab;           /* Soft Champagne Highlights */
+    
+    --eid-mint: #f0fdfa;            /* Fresh, breathable mint white */
+    --white: #ffffff;
+    --text-luxury: #064e3b;         /* Deep green for text (softer than black) */
+}
+
+/* --- 1. The Divine Atmosphere --- */
+body { 
+    background-color: var(--eid-mint);
+    background-image: 
+        /* The "Crescent Glow" - Soft golden light from the top right */
+        radial-gradient(circle at 80% -5%, rgba(212, 175, 55, 0.12), transparent 50%),
+        /* High-end Arabesque texture: Subtle enough to feel like premium paper */
+        url("https://www.transparenttextures.com/patterns/arabesque.png");
+    background-attachment: fixed;
+    color: var(--text-luxury);
+    font-family: 'Playfair Display', serif, system-ui; /* Serif adds immediate luxury */
+}
+
+/* --- 2. The Grand Entrance (Navbar) --- */
+.navbar { 
+    background: var(--emerald-deep) !important; 
+    padding: 1rem 1.5rem;
+    /* Double-line gold border for a "Framed" luxury look */
+    border-bottom: 3px solid var(--gold-leaf);
+    box-shadow: 0 15px 40px rgba(2, 44, 34, 0.25);
+}
+
+.brand-text { 
+    font-weight: 800; 
+    text-transform: uppercase; 
+    letter-spacing: 3px; 
+}
+.accent-part { 
+    color: var(--gold-leaf); 
+    /* Subtle glow like a neon sign in a boutique */
+    text-shadow: 0 0 12px rgba(212, 175, 55, 0.3); 
+}
+.navy-part { color: var(--white); }
+
+.nav-link { 
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.8) !important; 
+    transition: all 0.4s ease;
+}
+.nav-link:hover, .nav-link.active { 
+    color: var(--gold-leaf) !important; 
+    text-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+    transform: translateY(-2px);
+}
+
+/* --- 3. Boutique Elements --- */
+.hamburger-icon span { background-color: var(--gold-leaf); }
+
+.cart-btn {
+    background: rgba(212, 175, 55, 0.05);
+    border: 1px solid var(--gold-leaf);
+    border-radius: 4px; /* Sharper corners for a "High-Fashion" look */
+    color: var(--gold-leaf);
+    padding: 8px 24px;
+    transition: 0.5s;
+}
+.cart-btn:hover { 
+    background: var(--gold-leaf); 
+    color: var(--emerald-deep); 
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+}
+.cart-badge { 
+    background-color: var(--white) !important; 
+    color: var(--emerald-deep) !important; 
+    font-weight: 900;
+}
+
+/* WhatsApp: The Royal Concierge */
+.whatsapp-float {
+    background: linear-gradient(135deg, var(--gold-leaf), #b8860b); 
+    color: var(--emerald-deep);
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+/* --- 4. The Footer & Sidebar Archive --- */
+.offcanvas { background-color: var(--emerald-deep) !important; border-left: 2px solid var(--gold-leaf); }
+.offcanvas-header { border-bottom: 1px solid rgba(212, 175, 55, 0.2); }
+
+.footer-section { 
+    background: linear-gradient(180deg, var(--emerald-main) 0%, var(--emerald-deep) 100%); 
+    padding: 70px 0 30px;
+    border-top: 5px solid var(--gold-leaf);
+    color: var(--gold-silk);
+}
+.footer-title { 
+    color: var(--gold-leaf); 
+    font-weight: 900; 
+    border-bottom: 2px solid var(--gold-leaf);
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+.footer-link { color: rgba(255, 255, 255, 0.7); text-decoration: none; transition: 0.3s; }
+.footer-link:hover { color: var(--gold-leaf); padding-left: 10px; }
+
+/* --- 5. Premium Cards & Interaction --- */
+.card {
+    background: var(--white) !important;
+    border: none !important;
+    border-radius: 20px;
+    /* Sophisticated shadow with a hint of Emerald tint */
+    box-shadow: 0 10px 30px rgba(6, 78, 59, 0.05);
+    transition: 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 25px 50px rgba(6, 78, 59, 0.15);
+    border: 1px solid var(--gold-leaf) !important;
+}
+
+/* Alert: The Royal Decree */
+.alert-premium {
+    background: var(--white);
+    border: none;
+    border-right: 5px solid var(--gold-leaf);
+    border-left: 5px solid var(--gold-leaf);
+    border-radius: 0; /* Professional block style */
+    box-shadow: 0 15px 40px rgba(0,0,0,0.04);
+}
+.alert-icon { font-size: 1.5rem; color: var(--gold-leaf); }
+
+/* Scrollbar: Gold Silk Path */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--emerald-deep); }
+::-webkit-scrollbar-thumb { background: var(--gold-leaf); border-radius: 10px; }

@@ -1,0 +1,158 @@
+/* --- Ponno Sebaa Brand Theme --- */
+
+:root { 
+    /* Core Brand Palette */
+    --brand-teal: #1c6b6b;      /* Deep Teal from Logo */
+    --brand-gold: #d4a044;      /* Golden/Mustard Accent */
+    --brand-dark: #0d2b2b;      /* Deepened Teal for Backgrounds */
+    
+    /* UI Neutrals */
+    --light-bg: #f4f7f7;        /* Soft Cool Gray/Teal background */
+    --white: #ffffff;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    
+    /* Functional Colors */
+    --accent-hover: #144d4d;
+    --gold-glow: rgba(212, 160, 68, 0.3);
+}
+
+/* Base Body Style */
+body { 
+    background-color: var(--light-bg);
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+}
+
+/* Logo & Branding */
+.accent-part { color: var(--brand-gold); }
+.navy-part { color: var(--brand-teal); }
+
+/* Navbar Styling */
+.navbar { 
+    background: rgba(255, 255, 255, 0.98) !important;
+    box-shadow: 0 4px 20px rgba(28, 107, 107, 0.08);
+    border-bottom: 2px solid var(--brand-teal);
+}
+
+.nav-link {
+    color: var(--brand-dark) !important;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-link:hover, .nav-link.active { 
+    color: var(--brand-gold) !important; 
+}
+
+/* Mobile Menu Icon */
+.hamburger-icon span {
+    background-color: var(--brand-teal);
+}
+
+/* Interactive Components */
+.cart-btn {
+    background: var(--brand-teal);
+    color: var(--white);
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.cart-btn:hover { 
+    background: var(--brand-gold); 
+    color: var(--white); 
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px var(--gold-glow);
+}
+
+.whatsapp-float {
+    background-color: #25d366; 
+    color: var(--white);
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+}
+
+/* Sidebar (Offcanvas) - Dark Brand Mode */
+.offcanvas { 
+    background-color: var(--brand-dark) !important; 
+    border-left: 3px solid var(--brand-gold);
+}
+
+.offcanvas-header { 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+}
+
+.mobile-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 15px 20px;
+}
+
+.mobile-nav .nav-link i { 
+    color: var(--brand-gold); 
+}
+
+.mobile-nav .nav-link:hover { 
+    background: rgba(212, 160, 68, 0.1); 
+    color: var(--brand-gold) !important; 
+}
+
+/* Footer Section */
+.footer-section { 
+    background: var(--brand-dark); 
+    color: #cbd5e1; 
+    border-top: 4px solid var(--brand-gold);
+}
+
+.footer-title { 
+    color: var(--brand-gold); 
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-link { 
+    color: #94a3b8; 
+    transition: 0.2s;
+}
+
+.footer-link:hover { 
+    color: var(--brand-gold); 
+    padding-left: 5px;
+}
+
+.social-circle {
+    background: rgba(255,255,255,0.08);
+    color: var(--white);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.social-circle:hover { 
+    background: var(--brand-gold); 
+    color: var(--brand-dark); 
+    transform: rotate(360deg);
+}
+
+.copyright-bar {
+    background: rgba(0,0,0,0.3);
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.copyright-bar a { 
+    color: var(--brand-gold); 
+    text-decoration: none;
+}
+
+/* Premium Alerts/Cards */
+.alert-premium {
+    background: var(--white);
+    border-left: 5px solid var(--brand-gold);
+    box-shadow: 0 10px 30px rgba(28, 107, 107, 0.1);
+    border-radius: 12px;
+}
+
+/* Badge Styling */
+.badge-brand {
+    background-color: var(--brand-gold);
+    color: var(--brand-dark);
+    font-weight: 600;
+}

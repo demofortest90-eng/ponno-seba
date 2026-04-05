@@ -1,0 +1,152 @@
+/* --- 🌴 The Ultra-Hot Summer "Heatwave" Edition --- */
+
+:root { 
+    /* The Scorching Palette */
+    --deep-palm: #06111a;          /* Silhouette of palm trees at dusk */
+    --ocean-electric: #0284c7;     /* High-noon turquoise water */
+    --sunset-ember: #ff7e1a;       /* Intense, glowing heatwave orange */
+    --sun-flare: #facc15;          /* Blinding yellow sun reflection */
+    
+    --warm-sand: #fffbf0;          /* Premium desert/beach sand */
+    --white: #ffffff;
+    --text-charcoal: #1e293b;      /* Soft but high-contrast readability */
+}
+
+/* --- 1. The Scorching Atmosphere --- */
+body { 
+    background-color: var(--warm-sand);
+    background-image: 
+        /* Triple Glow - mimics the sun sitting on the horizon */
+        radial-gradient(circle at 50% -20%, rgba(250, 204, 21, 0.25), transparent 50%),
+        radial-gradient(circle at 80% 10%, rgba(255, 126, 26, 0.08), transparent 40%),
+        /* Tactile Sandpaper Texture */
+        url("https://www.transparenttextures.com/patterns/sandpaper.png");
+    background-attachment: fixed;
+    color: var(--text-charcoal);
+    font-family: 'Inter', sans-serif;
+}
+
+/* --- 2. The Horizon Navbar --- */
+.navbar { 
+    /* Gradient Sky: From Midnight Blue to Deep Ocean */
+    background: linear-gradient(135deg, #0f172a 0%, var(--ocean-electric) 100%) !important; 
+    padding: 1rem 1.5rem;
+    border-bottom: 5px solid var(--sunset-ember); 
+    box-shadow: 0 10px 40px rgba(2, 132, 199, 0.3);
+}
+
+.brand-text { 
+    font-weight: 900; 
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+    font-style: italic; /* Speed and energy */
+}
+.accent-part { 
+    color: var(--sun-flare); 
+    text-shadow: 0 0 15px rgba(250, 204, 21, 0.6); 
+}
+.navy-part { color: var(--white); }
+
+.nav-link { 
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+    color: rgba(255, 255, 255, 0.9) !important; 
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.nav-link:hover, .nav-link.active { 
+    color: var(--sun-flare) !important; 
+    transform: scale(1.1) translateY(-2px);
+    text-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* --- 3. Neon-Tropical Components --- */
+.hamburger-icon span { background-color: var(--sun-flare); }
+
+.cart-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid var(--sun-flare);
+    border-radius: 50px;
+    padding: 8px 22px;
+    color: var(--sun-flare);
+    backdrop-filter: blur(8px);
+}
+.cart-btn:hover { 
+    background: var(--sun-flare); 
+    color: var(--deep-palm); 
+    box-shadow: 0 0 25px rgba(250, 204, 21, 0.5);
+}
+.cart-badge { 
+    background: var(--sunset-ember) !important; 
+    color: var(--white) !important;
+    font-weight: 900;
+    border: 2px solid var(--white);
+}
+
+/* WhatsApp - Bio-Luminescent Green */
+.whatsapp-float {
+    background: linear-gradient(135deg, #4ade80, #166534); 
+    color: white;
+    box-shadow: 0 15px 35px rgba(74, 222, 128, 0.4);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* --- 4. Deep Ocean Footer --- */
+.footer-section { 
+    background: linear-gradient(180deg, var(--ocean-electric) 0%, var(--deep-palm) 100%); 
+    padding: 100px 0 40px;
+    border-top: 10px solid var(--sunset-ember);
+}
+.footer-title { 
+    color: var(--sun-flare); 
+    font-weight: 900; 
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+}
+.footer-link { color: #bae6fd; text-decoration: none; transition: 0.2s; }
+.footer-link:hover { color: var(--sun-flare); padding-left: 12px; }
+
+.social-circle {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--sun-flare);
+    color: var(--sun-flare);
+}
+.social-circle:hover { 
+    background: var(--sun-flare); 
+    color: var(--deep-palm); 
+    transform: rotate(360deg); /* High-vibe energy */
+}
+
+/* --- 5. Heatwave UI --- */
+.card {
+    background: var(--white);
+    border: none !important;
+    border-radius: 30px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.04);
+    transition: 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.card:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 40px 70px rgba(2, 132, 199, 0.15);
+}
+
+.alert-premium {
+    background: var(--white);
+    border-radius: 20px;
+    border: none;
+    border-bottom: 5px solid var(--sunset-ember);
+    border-top: 1px solid #fef3c7;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+}
+.alert-icon { font-size: 1.8rem; color: var(--sunset-ember); }
+
+/* Custom Scrollbar - Lava & Sand */
+::-webkit-scrollbar { width: 12px; }
+::-webkit-scrollbar-track { background: var(--warm-sand); }
+::-webkit-scrollbar-thumb { 
+    background: linear-gradient(var(--sunset-ember), var(--sun-flare));
+    border-radius: 10px;
+    border: 3px solid var(--warm-sand);
+}

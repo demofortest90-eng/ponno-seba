@@ -1,0 +1,151 @@
+/* --- ❄️ Ultra-Winter "Arctic Aurora" Edition --- */
+
+:root { 
+    /* The Glacial Palette */
+    --arctic-midnight: #020617;    /* Deepest space navy */
+    --glacial-blue: #7dd3fc;       /* Neon ice reflection */
+    --frost-white: #f8fafc;        /* The color of fresh, untouched snow */
+    --aurora-mint: #2dd4bf;        /* Northern Lights green-blue */
+    
+    --snow-bg: #f0f9ff;            /* Crisp, cool background air */
+    --white: #ffffff;
+    --text-slate: #1e293b;         /* Sophisticated dark slate for readability */
+}
+
+/* --- 1. The Glacial Atmosphere --- */
+body { 
+    background-color: var(--snow-bg);
+    background-image: 
+        /* The "Borealis" Effect - subtle cyan and blue glows at the top */
+        radial-gradient(circle at 20% -10%, rgba(45, 212, 191, 0.1), transparent 40%),
+        radial-gradient(circle at 80% -10%, rgba(125, 211, 252, 0.15), transparent 50%),
+        /* High-Definition Frost Texture */
+        url("https://www.transparenttextures.com/patterns/p4.png");
+    background-attachment: fixed;
+    color: var(--text-slate);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* --- 2. The Arctic Horizon (Navbar) --- */
+.navbar { 
+    /* Gradient representing a frozen midnight sky */
+    background: linear-gradient(135deg, var(--arctic-midnight) 0%, #1e3a8a 100%) !important; 
+    padding: 1.2rem 1.5rem;
+    /* The "Ice-Shelf" border */
+    border-bottom: 3px solid var(--glacial-blue); 
+    box-shadow: 0 15px 40px rgba(2, 6, 23, 0.3);
+}
+
+.brand-text { 
+    font-weight: 800; 
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+}
+.accent-part { 
+    color: var(--glacial-blue); 
+    /* The "Ice Glow" text effect */
+    text-shadow: 0 0 15px rgba(125, 211, 252, 0.6); 
+}
+.navy-part { color: var(--white); }
+
+.nav-link { 
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.8) !important; 
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-link:hover, .nav-link.active { 
+    color: var(--white) !important; 
+    text-shadow: 0 0 10px var(--glacial-blue);
+    transform: translateY(-2px);
+}
+
+/* --- 3. Frozen Interface Components --- */
+.hamburger-icon span { background-color: var(--glacial-blue); }
+
+.cart-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(125, 211, 252, 0.4);
+    border-radius: 8px; /* Sharper "Ice Cube" corners */
+    color: var(--glacial-blue);
+    backdrop-filter: blur(10px);
+    transition: 0.5s;
+}
+.cart-btn:hover { 
+    background: var(--glacial-blue); 
+    color: var(--arctic-midnight); 
+    box-shadow: 0 0 20px rgba(125, 211, 252, 0.4);
+    border-color: var(--white);
+}
+.cart-badge { 
+    background-color: var(--white) !important; 
+    color: var(--arctic-midnight) !important; 
+    font-weight: 800;
+}
+
+/* WhatsApp - Aurora Stream Edition */
+.whatsapp-float {
+    background: linear-gradient(135deg, #0d9488, var(--aurora-mint)); 
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 20px 40px rgba(13, 148, 136, 0.3);
+}
+
+/* --- 4. Sub-Zero Sidebar & Footer --- */
+.offcanvas { 
+    background: var(--arctic-midnight) !important; 
+    border-left: 2px solid var(--glacial-blue);
+}
+
+.footer-section { 
+    background: linear-gradient(180deg, #1e3a8a 0%, var(--arctic-midnight) 100%); 
+    padding: 80px 0 40px;
+    border-top: 6px solid var(--glacial-blue);
+    color: #94a3b8;
+}
+.footer-title { 
+    color: var(--white); 
+    font-weight: 900; 
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+    border-left: 4px solid var(--glacial-blue);
+    padding-left: 15px;
+}
+.footer-link { color: #64748b; transition: 0.3s; }
+.footer-link:hover { color: var(--glacial-blue); padding-left: 10px; }
+
+/* --- 5. "Glass-Ice" UI Elements --- */
+.card {
+    /* The "Frozen Window" effect */
+    background: rgba(255, 255, 255, 0.6) !important;
+    backdrop-filter: blur(15px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+    transition: 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.card:hover {
+    transform: translateY(-12px) scale(1.02);
+    background: rgba(255, 255, 255, 0.85) !important;
+    border-color: var(--glacial-blue) !important;
+    box-shadow: 0 30px 60px rgba(15, 23, 42, 0.15);
+}
+
+.alert-premium {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid var(--glacial-blue);
+    border-left: 10px solid var(--glacial-blue);
+    border-radius: 0 15px 15px 0;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+}
+.alert-icon { font-size: 1.5rem; color: var(--brand-blue); }
+
+/* Custom Scrollbar - Ice Trail */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--arctic-midnight); }
+::-webkit-scrollbar-thumb { 
+    background: linear-gradient(var(--glacial-blue), var(--aurora-mint));
+    border-radius: 10px;
+}

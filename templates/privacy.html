@@ -1,0 +1,176 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-9">
+            <div class="text-center mb-5 animate__animated animate__fadeIn">
+                <h1 class="fw-bold ps-text-gradient display-5">Privacy Policy</h1>
+                <p class="text-muted fw-bold small text-uppercase" style="letter-spacing: 2px;">
+                    <i class="fa-solid fa-clock-rotate-left me-1"></i> Last Updated: April 2026
+                </p>
+                <div class="ps-gold-divider mx-auto"></div>
+            </div>
+
+            <div class="card ps-policy-card shadow-lg p-4 p-md-5">
+                <div class="policy-section mb-5">
+                    <h4 class="ps-section-title"><i class="fa-solid fa-shield-halved"></i> 1. Introduction</h4>
+                    <p>Welcome to <strong>Ponno Sebaa</strong>. We value your privacy and are committed to protecting your personal data. This policy explains how we collect, use, and safeguard your information when you visit our website and purchase our products. Your trust is our primary growth.</p>
+                </div>
+
+                <div class="policy-section mb-5">
+                    <h4 class="ps-section-title"><i class="fa-solid fa-database"></i> 2. Information Collection</h4>
+                    <p>When you place an order or contact us, we collect specific information to ensure a seamless delivery experience:</p>
+                    <ul class="ps-custom-list">
+                        <li><strong>Identity Data:</strong> Full name and contact number.</li>
+                        <li><strong>Logistic Data:</strong> Detailed delivery address for accurate shipping.</li>
+                        <li><strong>Order History:</strong> Details of purchased items and your unique Order ID.</li>
+                        <li><strong>Digital footprint:</strong> Session cookies to maintain your shopping cart items.</li>
+                    </ul>
+                </div>
+
+                <div class="policy-section mb-5">
+                    <h4 class="ps-section-title"><i class="fa-solid fa-user-check"></i> 3. Usage of Data</h4>
+                    <p>Your data is strictly used for operational purposes within Ponno Sebaa:</p>
+                    <div class="row g-3 mt-2">
+                        <div class="col-md-6">
+                            <div class="ps-usage-box">
+                                <i class="fa-solid fa-truck-fast text-teal"></i>
+                                <span>Order Fulfillment & Logistics</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="ps-usage-box">
+                                <i class="fa-solid fa-headset text-teal"></i>
+                                <span>Customer Support & Updates</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="policy-section mb-5">
+                    <h4 class="ps-section-title"><i class="fa-solid fa-lock"></i> 4. Data Security</h4>
+                    <p>We implement industry-standard encryption and security measures. <strong>Ponno Sebaa does not sell, trade, or rent</strong> your personal identification information to third parties or marketing agencies.</p>
+                </div>
+
+                <div class="policy-section">
+                    <h4 class="ps-section-title"><i class="fa-solid fa-envelope-open-text"></i> 5. Get In Touch</h4>
+                    <p>If you have questions regarding your data privacy, our team is ready to assist you via our <strong>Contact Page</strong> or direct email at <strong>ponnoSebaa@gmail.com</strong>.</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="/" class="btn ps-btn-outline-rounded px-5">
+                    <i class="fa-solid fa-arrow-left-long me-2"></i> Return to Shopping
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    :root {
+        --ps-teal: #1c6b6b;
+        --ps-green-grad: linear-gradient(135deg, #1c6b6b 0%, #2e8b57 100%);
+        --ps-gold: #d4a044;
+        --ps-soft: #f8fcfc;
+    }
+
+    .ps-text-gradient {
+        background: var(--ps-green-grad);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .ps-gold-divider {
+        width: 80px;
+        height: 5px;
+        background: var(--ps-gold);
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+
+    .ps-policy-card {
+        border: none;
+        border-radius: 40px;
+        background: #ffffff;
+        border-bottom: 6px solid #f0f0f0;
+    }
+
+    .ps-section-title {
+        color: var(--ps-teal);
+        font-weight: 800;
+        margin-bottom: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .ps-section-title i {
+        font-size: 1.2rem;
+        background: var(--ps-soft);
+        padding: 12px;
+        border-radius: 12px;
+        color: var(--ps-gold);
+    }
+
+    .policy-section p {
+        color: #4a5568;
+        line-height: 1.8;
+        font-size: 1.05rem;
+    }
+
+    .ps-custom-list {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .ps-custom-list li {
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 12px;
+        color: #4a5568;
+    }
+
+    .ps-custom-list li::before {
+        content: '\f00c';
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 900;
+        position: absolute;
+        left: 0;
+        color: var(--ps-gold);
+    }
+
+    .ps-usage-box {
+        background: var(--ps-soft);
+        padding: 15px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 600;
+        color: var(--ps-teal);
+        border: 1px solid #eef4f4;
+    }
+
+    .ps-btn-outline-rounded {
+        border: 2px solid var(--ps-teal);
+        color: var(--ps-teal);
+        border-radius: 50px;
+        padding: 12px 30px;
+        font-weight: 700;
+        transition: 0.3s;
+    }
+
+    .ps-btn-outline-rounded:hover {
+        background: var(--ps-green-grad);
+        color: white;
+        border-color: transparent;
+        transform: translateY(-3px);
+    }
+
+    @media (max-width: 768px) {
+        .ps-policy-card { border-radius: 25px; padding: 30px 20px !important; }
+        .display-5 { font-size: 2.2rem; }
+    }
+</style>
+{% endblock %}
